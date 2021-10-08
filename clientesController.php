@@ -11,6 +11,8 @@
 <body>
 
     <?php
+    include('db_config.php');
+
     $nome = isset($_POST['nome']) ? $_POST['nome'] : null;
     $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : null;
     $dataNascimento = isset($_POST['data_nascimento']) ? $_POST['data_nascimento'] : null;
@@ -33,8 +35,7 @@
         $criadoEm = date('Y-m-d H:i:s');
         $editadoEm = date('Y-m-d H:i:s');
 
-        $sql = "INSERT INTO aluno (nome, cpf, data_nascimento, email, telefone, rua, numero, bairro, cidade, cep, genero, senha,  criado_em, editado_em)";
-        $sql .= " values ('$nome','$cpf','$dataNascimento','$email','$telefone','$rua','$numero', '$bairro', '$cidade','$cep','$genero','$senha','$criadoEm','$editadoEm')";
+        $sql = "INSERT INTO aluno (nome, cpf, data_nascimento, email, telefone, rua, numero, bairro, cidade, cep, genero, senha,  criado_em, editado_em) values ('$nome','$cpf','$dataNascimento','$email','$telefone','$rua','$numero', '$bairro', '$cidade','$cep','$genero','$senha','$criadoEm','$editadoEm')";
 
         $retornoSQL = mysqli_query($conexao, $sql);
 

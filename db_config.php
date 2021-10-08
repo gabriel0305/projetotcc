@@ -1,5 +1,5 @@
 <?php
-$enderecoServidor = '127.0.0.1';
+$enderecoServidor = 'localhost';
 $nomeBanco = 'aluno';
 $porta = '3306';
 $usuario = 'root';
