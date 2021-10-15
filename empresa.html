@@ -23,8 +23,8 @@
             <ul class="nav nav-pills barra">
                 <li class="nav-item"><a href="index.html" class="nav-link itenbarra">Inicio</a></li>
                 <li class="nav-item"><a href="loginemp.html" class="nav-link itenbarra">Entrar</a></li>
-                
-                
+
+
             </ul>
         </header>
     </div>
@@ -57,7 +57,7 @@
 
                     <div class="form-group">
                         <label for="cnpj">C.N.P.J</label>
-                        <input id="cnpj" required name="npj" type="text" class="form-control cnpj">
+                        <input id="cnpj" required name="cnpj" type="text" class="form-control cnpj">
                     </div><br>
 
                     <div>
@@ -65,7 +65,7 @@
                         <input id="telefone" required name="telefone" type="text" class="form-control phone">
                     </div><br>
 
-                    
+
                     <div>
                         <label for="cidade">Cidade</label>
                         <input id="cidade" required name="cidade" type="text" class="form-control">
@@ -91,7 +91,7 @@
                         </div>
                     </div><br>
                     <br>
-                    <a href="#" class="botao text-align float-left">VOLTAR</a>
+                    <a href="decisao.html" class="botao text-align float-left">VOLTAR</a>
                     <input type="submit" name="acao" value="SALVAR" class="botao text-align float-right">
                 </form>
 
@@ -116,22 +116,36 @@
     <script src="js/validate-pt-br.js"></script>
 
     <script>
-        $(document).ready(function(){
-             $('.date1').mask('00/00/0000');
+        $(document).ready(function() {
+            $('.date1').mask('00/00/0000');
             $('.time').mask('00:00:00');
             $('.date_time').mask('00/00/0000 00:00:00');
             $('.cep').mask('00.000-000');
             $('.phone').mask('(00) 0000-0000');
-            $('.cpf').mask('000.000.000-00', {reverse: true});
-            $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
-            $('.money').mask('000.000.000.000.000,00', {reverse: true});
-            $('.money2').mask("#.##0,00", {reverse: true});
-            $('.percent').mask('##0,00%', {reverse: true});
-            $('.clear-if-not-match').mask("00/00/0000", {clearIfNotMatch: true});
-            $('.placeholder').mask("00/00/0000", {placeholder: "__/__/____"});
+            $('.cpf').mask('000.000.000-00', {
+                reverse: true
+            });
+            $('.cnpj').mask('00.000.000/0000-00', {
+                reverse: true
+            });
+            $('.money').mask('000.000.000.000.000,00', {
+                reverse: true
+            });
+            $('.money2').mask("#.##0,00", {
+                reverse: true
+            });
+            $('.percent').mask('##0,00%', {
+                reverse: true
+            });
+            $('.clear-if-not-match').mask("00/00/0000", {
+                clearIfNotMatch: true
+            });
+            $('.placeholder').mask("00/00/0000", {
+                placeholder: "__/__/____"
+            });
 
             $('form').validate();
-  
+
         });
     </script>
 
