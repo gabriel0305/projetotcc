@@ -61,7 +61,7 @@
 
                     <div class="form-input">
                         <div class="form-input">
-                            <label for="genero">Genero </label>
+                            <label for="genero">Genero </label><br>
                             <select name="genero" id="genero">
                                 <option value="">--SELECIONE--</option>
                                 <option value="F">Feminino</option>
@@ -82,7 +82,7 @@
 
                     <div class="flex-row">
                         <div class="form-input">
-                            <label for="curso">Curso </label>
+                            <label for="curso">Curso </label><br>
                             <select name="curso" id="curso">
                                 <option value="">--SELECIONE--</option>
                                 <option value="I">Informática</option>
