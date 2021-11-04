@@ -36,7 +36,7 @@
 }
 
 .back-color {
-    background-color: #c4d5e4;
+    background-color: #73a5d1;
 }
 
 .logo {
@@ -189,3 +189,22 @@ th {
 .color {
     color: #fff;
 }
+
+.superior{
+    display: flex;
+    justify-content: center;
+    color: #b53131;
+}
+
+.conteudo{
+    margin-top: 20px;
+    color:#4a5a6b;
+    font-size: 20px;
+    overflow-y: hidden;
+    border: 6px double;
+    border-color: #4a5a6b;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
