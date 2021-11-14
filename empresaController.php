@@ -28,14 +28,14 @@
         $criadoEm = date('Y-m-d H:i:s');
         $editadoEm = date('Y-m-d H:i:s');
 
-        $sql = "INSERT INTO estagio (empresa, email, senha, cnpj, telefone, cidade, cep) values ('$empresa','$email','$senha','$cnpj','$telefone', '$cidade','$cep')";
+        $sql = "INSERT INTO empresa (empresa, email, senha, cnpj, telefone, cidade, cep) values ('$empresa','$email','$senha','$cnpj','$telefone', '$cidade','$cep')";
 
         $retornoSQL = mysqli_query($conexao, $sql);
 
         if ($retornoSQL == TRUE) {
-            header("Location: index.html");
+            header("Location: perfil.php");
         } else {
-            header("Location: index.php?erro=SALVAR");
+            header("Location: perfil.php?erro=SALVAR");
         }
     } else if ($acao == "ALTERAR") {
         $editadoEm = date('Y-m-d H:i:s');
@@ -47,9 +47,9 @@
         $retornoSQL = mysqli_query($conexao, $sql);
 
         if ($retornoSQL == TRUE) {
-            header("Location: index.html");
+            header("Location: perfil.php");
         } else {
-            header("Location: index.php?erro=ALTERAR");
+            header("Location: perfil.php?erro=ALTERAR");
         }
     }
 

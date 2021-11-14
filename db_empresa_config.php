@@ -1,8 +1,6 @@
-
-<!-- conexão com o banco de estagios das empresas-->
 <?php
 $enderecoServidor = 'localhost';
-$nomeBanco = 'empresas';
+$nomeBanco = 'aluno';
 $porta = '3306';
 $usuario = 'root';
 $senha = '';
