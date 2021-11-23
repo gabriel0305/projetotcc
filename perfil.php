@@ -59,7 +59,7 @@ $retornoSQL = mysqli_query($conexao, $sql);
                 <p class="text-center"><h3 class="red">Cep:</h3> <?= $dados['cep'] ?></p>
                 <p class="text-center">
                     <a href="alterar.php<?= $id ?>" class="botao">ALTERAR</a>
-                    <button type="button" class="botao">EXCLUIR</button>
+                    <button type="button" class="botao">SAIR</button>
                 </p>
         </div>
 
